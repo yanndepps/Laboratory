@@ -1,1 +1,8 @@
 .DS_Store
+.log/
+node_modules
+package-lock.json
+package.json
+tmp/
+temp/
+config.js
