@@ -14,7 +14,7 @@ body {
   left: -200%;
   width: 500%;
   height: 500%;
-  background: url('./assets/Brick_01.png');
+  background: url("./assets/Brick_01.png");
   transform: rotate3d(1, 0, 1, 50deg);
 }
 

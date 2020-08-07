@@ -10,8 +10,8 @@ class Bird {
   update() {
     let curve = Math.sin(angle) * 20;
     // restriction : make sure player stays within canvas
-    if (this.y > canvas.height - ( this.height*3 ) + curve) {
-      this.y = canvas.height - ( this.height*3 ) + curve;
+    if (this.y > canvas.height - this.height * 3 + curve) {
+      this.y = canvas.height - this.height * 3 + curve;
       this.vy = 0;
     } else {
       this.vy += this.weight;
@@ -28,7 +28,7 @@ class Bird {
     this.y += this.vy;
   }
   draw() {
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = "red";
     ctx.fillRect(this.x, this.y, this.width, this.height);
   }
   flap() {

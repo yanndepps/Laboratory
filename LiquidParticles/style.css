@@ -32,7 +32,7 @@ button {
 }
 
 button::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -44,23 +44,23 @@ button::before {
 }
 
 button:nth-child(1)::before {
-  content: 'HOME';
+  content: "HOME";
 }
 
 button:nth-child(2)::before {
-  content: 'PROJECTS';
+  content: "PROJECTS";
 }
 
 button:nth-child(3)::before {
-  content: 'CONTACT';
+  content: "CONTACT";
 }
 
 button:nth-child(4)::before {
-  content: 'ABOUT';
+  content: "ABOUT";
 }
 
 button:nth-child(5)::before {
-  content: 'HIRE ME';
+  content: "HIRE ME";
 }
 
 button:hover::before {
@@ -132,5 +132,5 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  filter: url('#goo');
+  filter: url("#goo");
 }
