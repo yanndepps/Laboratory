@@ -1,15 +1,27 @@
 @keyframes snow {
-  0% { background-position: 0 0, 0 0, 0 0, 0 0; }
-  40% { background-position: 10px 14vmin, -20px 28vmin, 20px 20vmin, 10px 24vmin; }
-  60% { background-position: -10px 21vmin, -30px 42vmin, 30px 30vmin, 15px 36vmin; }
-  100% { background-position: 0 35vmin, 0 70vmin, 0 50vmin, 0 60vmin; }
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  40% {
+    background-position: 10px 14vmin, -20px 28vmin, 20px 20vmin, 10px 24vmin;
+  }
+  60% {
+    background-position: -10px 21vmin, -30px 42vmin, 30px 30vmin, 15px 36vmin;
+  }
+  100% {
+    background-position: 0 35vmin, 0 70vmin, 0 50vmin, 0 60vmin;
+  }
 }
 
-html, body {
+html,
+body {
   background: #abc;
   overflow: hidden;
-  background-image:
-    radial-gradient(circle at 50% 50%, white 2.5%, transparent 0),
+  background-image: radial-gradient(
+      circle at 50% 50%,
+      white 2.5%,
+      transparent 0
+    ),
     radial-gradient(circle at 30% 90%, white 1.5%, transparent 0),
     radial-gradient(circle at 70% 10%, white 1%, transparent 0),
     radial-gradient(circle at 10% 40%, white 1%, transparent 0);
@@ -65,8 +77,14 @@ html, body {
 }
 
 @keyframes blink {
-  0%, 6%, 100% { height: 2%; }
-  3% { height: 0%; }
+  0%,
+  6%,
+  100% {
+    height: 2%;
+  }
+  3% {
+    height: 0%;
+  }
 }
 
 .eyes {
@@ -104,13 +122,27 @@ html, body {
 }
 
 @keyframes moveMustache {
-  0%, 40%, 44%, 100% { transform: translate(-100%, 0) rotate(25deg); }
-  42% { transform: translate(-100%, 0) rotate(30deg); }
+  0%,
+  40%,
+  44%,
+  100% {
+    transform: translate(-100%, 0) rotate(25deg);
+  }
+  42% {
+    transform: translate(-100%, 0) rotate(30deg);
+  }
 }
 
 @keyframes moveMustache2 {
-  0%, 40%, 44%, 100% { transform: rotate(-25deg); }
-  42% { transform: rotate(-30deg); }
+  0%,
+  40%,
+  44%,
+  100% {
+    transform: rotate(-25deg);
+  }
+  42% {
+    transform: rotate(-30deg);
+  }
 }
 
 .mustache {
@@ -178,10 +210,23 @@ html, body {
   background: var(--suit);
   border-radius: 100% / 150% 150% 25% 25%;
   transform: translate(-50%, 0);
-  background-image:
-    radial-gradient(circle at 50% -50%, transparent 75%, var(--belt) 0 83%, transparent 0 92.5%, white 93%),
+  background-image: radial-gradient(
+      circle at 50% -50%,
+      transparent 75%,
+      var(--belt) 0 83%,
+      transparent 0 92.5%,
+      white 93%
+    ),
     linear-gradient(to right, transparent 42%, white 43% 57%, transparent 58%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 51% 100%, 50% 90%, 49% 100%, 0% 100%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    51% 100%,
+    50% 90%,
+    49% 100%,
+    0% 100%
+  );
 }
 
 .buttons {
@@ -231,7 +276,7 @@ html, body {
   height: 13%;
   background: var(--belt);
   box-shadow: 41vmin 0 var(--belt);
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .leg {
